@@ -1,0 +1,326 @@
+Tailwind CSS and HTML only landing page for YKart... 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ai-public.mastergo.com/gen_page/tailwind-custom.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script>
+    tailwind.config={theme:{extend:{colors:{primary:'#2563eb'},borderRadius:{'none':'0px','sm':'2px',DEFAULT:'4px','md':'8px','lg':'12px','xl':'16px','2xl':'20px','3xl':'24px','full':'9999px','button':'4px'}}}}
+    </script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-white">
+      <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex items-center justify-between h-20">
+            <div class="flex items-center space-x-12">
+              <div class="text-2xl font-bold text-primary">YKart</div>
+              <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors duration-200">产品</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors duration-200">解决方案</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors duration-200">新闻资讯</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors duration-200">关于我们</a>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <button class="!rounded-button px-6 py-2 bg-primary text-white hover:bg-blue-700 transition-colors duration-200 whitespace-nowrap">
+                联系我们
+              </button>
+              <button class="!rounded-button px-4 py-2 border border-gray-200 hover:border-primary transition-colors duration-200 whitespace-nowrap">
+                <i class="fas fa-globe mr-1"></i> 中文
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="relative h-screen bg-gradient-to-r from-gray-900 to-transparent overflow-hidden">
+        <div class="absolute inset-0">
+          <img src="https://ai-public.mastergo.com/ai/img_res/3969806ebdf72dc05eb6122c9394f79e.jpg"
+               class="w-full h-full object-cover object-center" alt="hero background" />
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+          <div class="max-w-2xl text-white space-y-8">
+            <h1 class="text-6xl font-bold leading-tight">
+              引领智能赛道新时代
+            </h1>
+            <p class="text-xl text-gray-200">
+              YKart 打造新一代智能电动卡丁车，为您带来前所未有的赛道体验。结合 AI 智能控制与极致性能，开启竞速运动新篇章。
+            </p>
+            <div class="flex space-x-4">
+              <button class="!rounded-button px-8 py-3 bg-primary text-white hover:bg-blue-700 transition-colors duration-200 text-lg font-medium whitespace-nowrap">
+                立即体验
+              </button>
+              <button class="!rounded-button px-8 py-3 border border-white/30 hover:bg-white/10 transition-colors duration-200 text-lg font-medium whitespace-nowrap">
+                了解更多
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">核心产品特性</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              融合尖端科技与卓越性能，为您带来极致的赛道体验
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/617ba82824a5681a1088914d2690e91f.jpg" 
+                   class="w-full h-48 object-cover rounded-lg mb-6" alt="智能控制系统"/>
+              <h3 class="text-xl font-bold mb-3">智能控制系统</h3>
+              <p class="text-gray-600">采用 AI 深度学习算法，实时优化驾驶体验</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/37fcf7579a404853f85a09642ee992a9.jpg"
+                   class="w-full h-48 object-cover rounded-lg mb-6" alt="安全保障系统"/>
+              <h3 class="text-xl font-bold mb-3">安全保障系统</h3>
+              <p class="text-gray-600">多重安全防护，确保驾驶安全</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/611f46f5f33cfd0e425ee9a1c2e73356.jpg"
+                   class="w-full h-48 object-cover rounded-lg mb-6" alt="高性能动力"/>
+              <h3 class="text-xl font-bold mb-3">高性能动力</h3>
+              <p class="text-gray-600">强劲动力输出，极致操控体验</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/d8b54d3256852455977f69819220c800.jpg"
+                   class="w-full h-48 object-cover rounded-lg mb-6" alt="智能数据分析"/>
+              <h3 class="text-xl font-bold mb-3">智能数据分析</h3>
+              <p class="text-gray-600">实时数据监测，专业性能分析</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">领先技术优势</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              持续创新的技术研发，为您提供更安全、更智能的驾驶体验
+            </p>
+          </div>
+          <div class="space-y-24">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+              <div class="flex-1">
+                <img src="https://ai-public.mastergo.com/ai/img_res/d5330afdb121bdba5bfc91d6cca08bc3.jpg"
+                     class="w-full rounded-xl shadow-lg" alt="智能系统架构"/>
+              </div>
+              <div class="flex-1 space-y-6">
+                <h3 class="text-3xl font-bold">智能系统架构</h3>
+                <p class="text-gray-600 text-lg">采用新一代智能控制系统，实现精准操控和智能辅助</p>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span class="ml-3 text-gray-600">AI 深度学习算法优化</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span class="ml-3 text-gray-600">实时性能监控系统</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span class="ml-3 text-gray-600">智能防碰撞系统</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+              <div class="flex-1">
+                <img src="https://ai-public.mastergo.com/ai/img_res/549f5d4db9fed27246346ccb1c13ff38.jpg"
+                     class="w-full rounded-xl shadow-lg" alt="电池管理技术"/>
+              </div>
+              <div class="flex-1 space-y-6">
+                <h3 class="text-3xl font-bold">电池管理技术</h3>
+                <p class="text-gray-600 text-lg">创新电池管理系统，提供持久续航能力</p>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span class="ml-3 text-gray-600">智能充放电管理</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span class="ml-3 text-gray-600">电池寿命优化</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-primary mt-1"></i>
+                    <span class="ml-3 text-gray-600">快速充电技术</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">多样化应用场景</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              适应不同场景需求，为各类场所提供专业解决方案
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group relative overflow-hidden rounded-xl">
+              <img src="https://ai-public.mastergo.com/ai/img_res/f74ea454a8694e61c4955958d3bfb5b4.jpg"
+                   class="w-full aspect-[4/5] object-cover transition-transform duration-300 group-hover:scale-110" alt="室内娱乐场所"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                <div class="text-white">
+                  <h3 class="text-xl font-bold mb-2">室内娱乐场所</h3>
+                  <p class="text-sm text-gray-200">为室内娱乐场所提供专业的卡丁车解决方案</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+              <img src="https://ai-public.mastergo.com/ai/img_res/e5ac89afada8b0e710e64c575dc8e965.jpg"
+                   class="w-full aspect-[4/5] object-cover transition-transform duration-300 group-hover:scale-110" alt="主题乐园"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                <div class="text-white">
+                  <h3 class="text-xl font-bold mb-2">主题乐园</h3>
+                  <p class="text-sm text-gray-200">打造独特的主题乐园竞速体验</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+              <img src="https://ai-public.mastergo.com/ai/img_res/988ad2b4fead6ea4b3714358aee1b662.jpg"
+                   class="w-full aspect-[4/5] object-cover transition-transform duration-300 group-hover:scale-110" alt="专业赛事"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                <div class="text-white">
+                  <h3 class="text-xl font-bold mb-2">专业赛事</h3>
+                  <p class="text-sm text-gray-200">支持专业赛事举办，提供赛事解决方案</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl">
+              <img src="https://ai-public.mastergo.com/ai/img_res/d76e29ef4acf875960402ebbf102b012.jpg"
+                   class="w-full aspect-[4/5] object-cover transition-transform duration-300 group-hover:scale-110" alt="培训中心"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                <div class="text-white">
+                  <h3 class="text-xl font-bold mb-2">培训中心</h3>
+                  <p class="text-sm text-gray-200">专业的驾驶培训体系和场地支持</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">合作伙伴</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              携手行业领军企业，共创智能赛车新未来
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+            <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/902e9dee01e90f82ccac3e25a1f68036.jpg"
+                   class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="科技创新"/>
+            </div>
+            <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/70603bd4b3fde93f75e22cf143b8bbc3.jpg"
+                   class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="动力科技"/>
+            </div>
+            <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/e4fbc7e114598a31ede2d0df8925111c.jpg"
+                   class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="智能系统"/>
+            </div>
+            <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/930b3594fb6405adbb8092f03a013a70.jpg"
+                   class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="新能源"/>
+            </div>
+            <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/5ed643561356a34a6ec828129f9669b0.jpg"
+                   class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="数据科技"/>
+            </div>
+            <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-200">
+              <img src="https://ai-public.mastergo.com/ai/img_res/1750ffe96ef7d70c15779381145b8606.jpg"
+                   class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="智慧出行"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-gray-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="space-y-8">
+              <h3 class="text-2xl font-bold mb-6">联系我们</h3>
+              <form class="space-y-4">
+                <div>
+                  <input type="text" placeholder="您的姓名" 
+                         class="w-full px-4 py-3 bg-gray-800 rounded-lg border-none focus:ring-2 focus:ring-primary"/>
+                </div>
+                <div>
+                  <input type="email" placeholder="电子邮箱" 
+                         class="w-full px-4 py-3 bg-gray-800 rounded-lg border-none focus:ring-2 focus:ring-primary"/>
+                </div>
+                <div>
+                  <textarea placeholder="留言内容" rows="4" 
+                            class="w-full px-4 py-3 bg-gray-800 rounded-lg border-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                <button class="!rounded-button w-full py-3 bg-primary text-white hover:bg-blue-700 transition-colors duration-200 whitespace-nowrap">
+                  发送消息
+                </button>
+              </form>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+              <div>
+                <h4 class="text-lg font-bold mb-4">联系方式</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-center">
+                    <i class="fas fa-location-dot mr-2"></i>
+                    <span>上海市浦东新区张江高科技园区</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-phone mr-2"></i>
+                    <span>400-888-9999</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span>contact@yueyuan.com</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold mb-4">关注我们</h4>
+                <div class="flex space-x-4">
+                  <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors duration-200">
+                    <i class="fab fa-weixin"></i>
+                  </a>
+                  <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors duration-200">
+                    <i class="fab fa-weibo"></i>
+                  </a>
+                  <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors duration-200">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+            <p>© 2024 YKart. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+```
